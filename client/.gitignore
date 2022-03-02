@@ -23,7 +23,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-tsconfig.tsbuildinfo
+.pnpm-debug.log*
 
 # local env files
 .env.local
@@ -34,3 +34,5 @@ tsconfig.tsbuildinfo
 # vercel
 .vercel
 
+# typescript
+*.tsbuildinfo
