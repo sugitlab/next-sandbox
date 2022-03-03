@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
+const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : '';
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -60,7 +62,12 @@ const Home: NextPage = () => {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <img src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
+            <img
+              src={`${urlPrefix}/vercel.svg`}
+              alt='Vercel Logo'
+              width={72}
+              height={16}
+            />
           </span>
         </a>
       </footer>
