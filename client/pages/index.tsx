@@ -38,7 +38,7 @@ const HomePage = () => {
         }}
         weight='bold'
       >
-        Let's
+        Let&apos;s
       </Text>
       <Text
         h1
