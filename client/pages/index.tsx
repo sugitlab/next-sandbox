@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import { useTheme, Text } from '@nextui-org/react';
 import ThemeSwitch from '../components/theme-switch';
 
@@ -60,6 +61,9 @@ const HomePage = () => {
       >
         Prettier
       </Text>
+      <Link passHref href='/blog'>
+        <Text>Blog</Text>
+      </Link>
     </div>
   );
 };
